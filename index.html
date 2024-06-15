@@ -82,6 +82,29 @@
         .links-container a:hover {
             background-color: #2980b9;
         }
+        .gallery {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            display: none;
+        }
+        .gallery img.active {
+            display: block;
+        }
+        .gallery .caption {
+            position: absolute;
+            bottom: 8px;
+            left: 16px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -120,9 +143,9 @@
             <a href="https://prasarbharati.gov.in/doordarshan/"><img src="ddlogo.png" alt="DD Logo"></a>
         </header>
         <h1>Training TR-102 Report</h1>
-        <p>By Srijan Singh, URN 2203565,<br>Guru Nanak Dev Engineering College Ludhiana</p>
+        <p>By Srijan Singh, URN 2203565, Guru Nanak Dev Engineering College Ludhiana</p>
         <section>
-            <h2>4 Week training at <br> Doordarshan Bhawan New Delhi</h2>
+            <h2>4 Week training at Doordarshan Bhawan New Delhi</h2>
             <div class="links-container">
                 <a href="day1.html">Day 1</a>
                 <a href="day2.html">Day 2</a>
@@ -133,6 +156,7 @@
                 <a href="day7.html">Day 7</a>
                 <a href="day8.html">Day 8</a>
                 <!-- <a href="day9.html">Day 9</a>
+                <a href="day10.html">Day 10</a>
                 <a href="day11.html">Day 11</a>
                 <a href="day12.html">Day 12</a>
                 <a href="day13.html">Day 13</a>
@@ -153,9 +177,49 @@
                 <a href="day28.html">Day 28</a> -->
             </div>
         </section>
+        <section>
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="IngestRoom1.jpg" alt="Ingest Room" class="active">
+                <div class="caption">Ingest Room</div>
+                <img src="IngestRoom2.jpg" alt="Ingest Room" class="active">
+                <div class="caption">Ingest Room</div>
+                <img src="PCR.jpg" alt="PCR">
+                <div class="caption">PCR</div>
+                <img src="ENPS SR.jpg" alt="ENPS Server Room">
+                <div class="caption">ENPS Server Room</div>
+                <img src="AP ENPS.jpg" alt="AP ENPS Dashboard">
+                <div class="caption">AP ENPS Dashboard</div>
+                <img src="SpectraDashboard.jpg" alt="Spectra Black Pearl Dashboard">
+                <div class="caption">Spectra Black Pearl Dashboard</div>
+                <img src="SpectraDashboard1.jpg" alt="Spectra Black Pearl Dashboard">
+                <div class="caption">Spectra Black Pearl Dashboard</div>
+            </div>
+        </section>
         <footer>
-           <a href="https://www.linkedin.com/in/srijan-singh-559258255/"> &copy; Srijan Singh </a>
+           <a href="https://www.linkedin.com/in/srijan-singh-559258255/"> &copy; Srijan Singh</a>
         </footer>
     </div>
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.gallery img');
+        const captions = document.querySelectorAll('.gallery .caption');
+
+        function showSlide(index) {
+            images.forEach((img, i) => {
+                img.classList.remove('active');
+                captions[i].style.display = 'none';
+            });
+            images[index].classList.add('active');
+            captions[index].style.display = 'block';
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 5000); // Change image every 3 seconds
+    </script>
 </body>
 </html>
