@@ -1,10 +1,11 @@
 # 4-Week Industrial Training at Doordarshan Bhawan
 
-I am Srijan Singh, University Roll Number: 2203565. This repository was made during my 4-week training at Doordarshan Bhawan, Copernicus Marg, New Delhi - 110001.
+I am Srijan Singh, Student of Guru Nanak Dev Engineering College Ludhiana, University Roll Number: 2203565. 
+This repository was made during my 4-week training at Doordarshan Bhawan, Copernicus Marg, New Delhi - 110001.
 
 ## Repository Contents
 
-This repository contains daily reports documenting the completion of the TR-102 training at Guru Nanak Dev Engineering College Ludhiana. Each day’s report is available as a PDF file. Additionally, it includes some photos and an `index.html` file, which is hosted on GitHub Pages.
+This repository contains daily reports documenting the completion of the TR-102. Each day’s report is available as a PDF file. Additionally, it includes some photos and an `index.html` file, which is hosted on GitHub Pages.
 
 ## Hosted on GitHub Pages
 
