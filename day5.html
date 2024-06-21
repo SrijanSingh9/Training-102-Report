@@ -9,7 +9,8 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #eef2f7;
+            background: url('BG.png') no-repeat center center fixed;
+            background-size: cover;
             color: #333;
         }
         .container {
@@ -17,7 +18,7 @@
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.8);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
@@ -26,7 +27,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            background-color: #2c3e50;
+            background: linear-gradient(to right, #000000, #434343);
             padding: 10px 20px;
             color: #fff;
             border-radius: 10px 10px 0 0;
@@ -72,7 +73,8 @@
             height: 600px;
             border: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;}
+            border-radius: 10px;
+        }
         .links-container {
             display: flex;
             flex-wrap: wrap;
@@ -96,7 +98,7 @@
             text-align: center;
             padding: 20px;
             margin-top: 40px;
-            background-color: #2c3e50;
+            background: linear-gradient(to right, #434343, #000000);
             color: #fff;
             border-radius: 0 0 10px 10px;
         }
@@ -118,6 +120,9 @@
             }
             header img {
                 height: 40px;
+            }
+            .pdf-container iframe {
+                height: 400px;
             }
         }
     </style>
