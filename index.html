@@ -50,20 +50,31 @@
         header .home-button:hover {
             background-color: #000000;
         }
-        h1 {
+        nav {
             text-align: center;
-            color: #2c3e50;
             margin-bottom: 20px;
         }
-        p {
-            text-align: center;
-            color: #7f8c8d;
-            font-size: 18px;
+        nav a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
         }
-        h2 {
+        nav a:hover {
+            background-color: #2980b9;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        h1, h2, p {
             text-align: center;
-            color: #2c3e50;
-            margin-bottom: 20px;
         }
         .pdf-container {
             text-align: center;
@@ -75,25 +86,6 @@
             border: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-        }
-        .links-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-        .links-container a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .links-container a:hover {
-            background-color: #2980b9;
         }
         .gallery {
             position: relative;
@@ -162,51 +154,128 @@
     <div class="container">
         <header>
             <a href="https://www.gndec.ac.in/"><img src="gndecLogo.png" alt="GNDEC Logo"></a>
-            <a href="index.html" class="home-button">Home</a>
             <a href="https://prasarbharati.gov.in/doordarshan/"><img src="ddlogo.png" alt="DD Logo"></a>
         </header>
-        <h1>Training TR-102 Report</h1>
-        <p>By Srijan Singh, URN 2203565 <br> Guru Nanak Dev Engineering College Ludhiana</p>
-        <section>
-            <h2>4 Week training at <br> Doordarshan Bhawan New Delhi</h2>
-            <div class="links-container">
-                <a href="day1.html">Day 1</a>
-                <a href="day2.html">Day 2</a>
-                <a href="day3.html">Day 3</a>
-                <a href="day4.html">Day 4</a>
-                <a href="day5.html">Day 5</a>
-                <a href="day6.html">Day 6</a>
-                <a href="day7.html">Day 7</a>
-                <a href="day8.html">Day 8</a>
-                <a href="day9.html">Day 9</a>
-                <a href="day10.html">Day 10</a>
-                <a href="day11.html">Day 11</a>
-                <a href="day12.html">Day 12</a>
-                <!-- <a href="day13.html">Day 13</a>
-                <a href="day14.html">Day 14</a>
-                <a href="day15.html">Day 15</a>
-                <a href="day16.html">Day 16</a>
-                <a href="day17.html">Day 17</a>
-                <a href="day18.html">Day 18</a>
-                <a href="day19.html">Day 19</a>
-                <a href="day20.html">Day 20</a>
-                <a href="day21.html">Day 21</a>
-                <a href="day22.html">Day 22</a>
-                <a href="day23.html">Day 23</a>
-                <a href="day24.html">Day 24</a>
-                <a href="day25.html">Day 25</a>
-                <a href="day26.html">Day 26</a>
-                <a href="day27.html">Day 27</a>
-                <a href="day28.html">Day 28</a> -->
+        
+
+        <section id="home" class="section active">
+            <h1>Training TR-102 Report</h1>
+            <p>By Srijan Singh, URN 2203565, Guru Nanak Dev Engineering College Ludhiana</p>
+            <h2>4 Week training at Doordarshan Bhawan New Delhi</h2>
+        </section>
+        <nav>
+            <a href="#" onclick="showSection('home')">Home</a>
+            <br>
+            <a href="#" onclick="showSection('day1')">Day 1</a>
+            <a href="#" onclick="showSection('day2')">Day 2</a>
+            <a href="#" onclick="showSection('day3')">Day 3</a>
+            <a href="#" onclick="showSection('day4')">Day 4</a>
+            <a href="#" onclick="showSection('day5')">Day 5</a>
+            <a href="#" onclick="showSection('day6')">Day 6</a>
+            <a href="#" onclick="showSection('day7')">Day 7</a>
+            <a href="#" onclick="showSection('day8')">Day 8</a>
+            <a href="#" onclick="showSection('day9')">Day 9</a>
+            <a href="#" onclick="showSection('day10')">Day 10</a>
+            <a href="#" onclick="showSection('day11')">Day 11</a>
+            <a href="#" onclick="showSection('day12')">Day 12</a>
+            <!-- <a href="#" onclick="showSection('day13')">Day 13</a>
+            <a href="#" onclick="showSection('day14')">Day 14</a>
+            <a href="#" onclick="showSection('day15')">Day 15</a>
+            <a href="#" onclick="showSection('day16')">Day 16</a> -->
+            <br>
+            <a href="#" onclick="showSection('gallery')">Gallery</a>
+            <!-- Add more links for additional days if needed -->
+        </nav>
+        <section id="day1" class="section">
+            <h1>Training Report Day 1</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day1.pdf"></iframe>
             </div>
         </section>
-        <section>
-            <br>
+
+        <section id="day2" class="section">
+            <h1>Training Report Day 2</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day2.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day3" class="section">
+            <h1>Training Report Day 3</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day3.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day4" class="section">
+            <h1>Training Report Day 4</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day4.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day5" class="section">
+            <h1>Training Report Day 5</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day5.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day6" class="section">
+            <h1>Training Report Day 6</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day6.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day7" class="section">
+            <h1>Training Report Day 7</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day7.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day8" class="section">
+            <h1>Training Report Day 8</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day8.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day9" class="section">
+            <h1>Training Report Day 9</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day9.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day10" class="section">
+            <h1>Training Report Day 10</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day10.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day11" class="section">
+            <h1>Training Report Day 11</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day11.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="day12" class="section">
+            <h1>Training Report Day 12</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Day12.pdf"></iframe>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
             <h2>Gallery</h2>
             <div class="gallery">
                 <img src="IngestRoom1.jpg" alt="Ingest Room" class="active">
                 <div class="caption">Ingest Room</div>
-                <img src="IngestRoom2.jpg" alt="Ingest Room" class="active">
+                <img src="IngestRoom2.jpg" alt="Ingest Room">
                 <div class="caption">Ingest Room</div>
                 <img src="PCR.jpg" alt="PCR">
                 <div class="caption">PCR</div>
@@ -220,11 +289,20 @@
                 <div class="caption">Spectra Black Pearl Dashboard</div>
             </div>
         </section>
+
         <footer>
            <a href="https://www.linkedin.com/in/srijan-singh-559258255/"> &copy; Srijan Singh</a>
         </footer>
     </div>
     <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(id).classList.add('active');
+        }
+
         let currentIndex = 0;
         const images = document.querySelectorAll('.gallery img');
         const captions = document.querySelectorAll('.gallery .caption');
@@ -243,7 +321,7 @@
             showSlide(currentIndex);
         }
 
-        setInterval(nextSlide, 5000); // Change image every 3 seconds
+        setInterval(nextSlide, 4000); // Change image every 4 seconds
     </script>
 </body>
 </html>
