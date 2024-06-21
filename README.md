@@ -1,4 +1,5 @@
-# 4-Week Industrial Training at Doordarshan Bhawan From 05/06/2024 to 05/07/2024
+# 4-Week Industrial Training at Doordarshan Bhawan 
+##From 05/06/2024 to 05/07/2024
 
 I am Srijan Singh, Student of Guru Nanak Dev Engineering College Ludhiana, University Roll Number: 2203565. 
 This repository was made during my 4-week training at Doordarshan Bhawan, Copernicus Marg, New Delhi - 110001.
