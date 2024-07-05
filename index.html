@@ -64,6 +64,24 @@
             margin: 5px;
             transition: background-color 0.3s ease;
         }
+        .project-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .project-button {
+            background-color: #888954;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        .project-button:hover {
+            background-color: #666;
+        }
         nav a:hover {
             background-color: #2980b9;
         }
@@ -185,6 +203,8 @@
             <br>
             <a href="#" onclick="showSection('gallery')">Gallery</a>
             <!-- Add more links for additional days if needed -->
+             <br>
+            <a style="background-color: rgb(13, 0, 113);" href="#" onclick="showSection('projects')">Projects</a>
         </nav>
         <section id="day1" class="section">
             <h1>Training Report Day 1</h1>
@@ -335,6 +355,40 @@
                 <div class="caption">Earth Station Diagram</div>
                 <img scr="Dish At Earth Station for uplinking as well as downlinking.jpg" alt="Dish At Earth Station for uplinking as well as downlinking">
                 <div class="caption">Dish At Earth Station for uplinking as well as downlinking</div>
+        </section>
+        <section id="projects" class="section">
+            <h1>Projects</h1>
+            <ul>
+            <li>
+            <div class="project-buttons">
+                <a href="https://srijansingh9.github.io/Teleprompter/" class="project-button">Teleprompter</a>
+            </div>
+            <div class="project-details">
+            
+                <h2>Teleprompter Project</h2>
+                <p>This project is a simple web-based teleprompter created for demonstrative purposes. It showcases the basic functionality of a teleprompter using HTML, CSS, and JavaScript.</p>
+                <b>Features</b>
+                <ol>
+                    <li>It has option to change the text font size to accordingly make it easy to read from a distance.</li>
+                    <li>It can scroll the text at +ve as well as -ve speed that can be adjusted using the speed control bar.</li>
+                    <li>It provides controls to start, pause, and toggle fullscreen .</li>
+                    <li>It allows the user to input their own text as well as selecting a text file to be displayed on the teleprompter.</li>
+                </ol>
+            </li>
+            <li>
+                <div class="project-buttons">
+                    <a href="https://github.com/ebu/awesome-broadcasting" class="project-button" onclick="showSection('NRCS')">Creating our own NRCS</a>
+                </div>
+                <section id="NRCS" class="project-details">
+                    <h1>Creating our own NRCS</h1>
+                    <div class="pdf-container">
+                        <iframe src="https://srijansingh9.github.io/Training-102-Report/NRCS.pdf"></iframe>
+                    </div>
+                </section>
+
+            </li>
+            </ul>
+            </div>
         </section>
 
         <footer>
