@@ -132,6 +132,15 @@
         .gallery .caption.active {
             display: block;
         }
+        .certificate-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .certificate-container img {
+            max-width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
         footer {
             text-align: center;
             padding: 20px;
@@ -183,6 +192,10 @@
             <h2>4 Week training at <br> Doordarshan Bhawan New Delhi</h2>
         </section>
         <nav>
+            <a style="background-color: rgb(0, 199, 156);" href="#" onclick="showSection('certificate')">Training Certificate</a>
+            <br>
+            <a style="background-color: rgb(0, 199, 156);" href="#" onclick="showSection('Final-Report')">Final Report</a>
+            <br>
             <a href="#" onclick="showSection('day1')">Day 1</a>
             <a href="#" onclick="showSection('day2')">Day 2</a>
             <a href="#" onclick="showSection('day3')">Day 3</a>
@@ -206,6 +219,18 @@
              <br>
             <a style="background-color: rgb(13, 0, 113);" href="#" onclick="showSection('projects')">Projects</a>
         </nav>
+        <section id="certificate" class="section">
+            <h1>Certificate</h1>
+            <div class="certificate-container">
+                <img src="TC.jpg" alt="Training Certificate">
+            </div>
+        </section>  
+        <section id="Final-Report" class="section">
+            <h1>Final Report</h1>
+            <div class="pdf-container">
+                <iframe src="https://srijansingh9.github.io/Training-102-Report/Final Report.pdf"></iframe>
+            </div>
+        </section>  
         <section id="day1" class="section">
             <h1>Training Report Day 1</h1>
             <div class="pdf-container">
